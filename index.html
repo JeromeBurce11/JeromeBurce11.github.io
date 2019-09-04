@@ -23,30 +23,67 @@
   h4{
     background-color: green;
     color:white;
-    padding: 3px;
+    padding: 5px;
   }
   div{
     background-color: green;
     color:white;
     padding: 3px;
   }
+  input{
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .up{
+    float: left;
+    position: relative;
+    height:80px;
+    width:80px;
+    border-radius: 100%;
+    border: groove;
+    top: -40px;
+    border-color:#66ffff; 
+  }
+  .name{
+    position: relative;
+    float: left;
+    left: 10px;
+    top: -50px;
+    font-size: 40px;
+    border: none;
+    color:white;
+  }
+  div{
+    width: 100%;
+    background-color: green;
+    padding: 60px;
+  }
+  .app{
+    position: relative;
+    float: left;
+    left: -235px;
+    top: 10px;
+    border: none;
+    color:white;
+    font-style:italic;
+  }
 </style>
 
 <body>
   <center>
   <div>
-      <h1>MQTT</h1>
-      <p>My MQTT Web App</p>
-      
+      <img class="up" src="https://lh3.googleusercontent.com/--XOBrnS2b9c/XGJod7MFTKI/AAAAAAAAALU/4FmHG3mXxFwzbsfMvaamrjlzg625gYxhACEwYBhgL/w140-h140-p/26754591_1754847841226645_2036073689_n.jpg">
+      <h1 class="name">Jerome Burce</h1>
+      <p class="app">My MQTT Web App</p>  
   </div><br>
   <fieldset>
     <center>
       <h4>Broker</h4>
-      <label for="address">Address:</label><br>
+      <label for="address">Address:</label>
       <input type="text" id="address" value="wss://test.mosquitto.org:8081/mqtt"><br><br>
       <button type="button" class="btn btn-success" id="btn-connect">Connect</button>
-      <button class="btn btn-success" id="btn-disconnect">Disconnect</button><br>
-      <label for="Status">Status:</label><br>
+      <button class="btn btn-success" id="btn-disconnect">Disconnect</button><br><br>
+      <label for="Status">Status:</label>
       <input type="text" id="status">
     </center>
   </fieldset><br>
