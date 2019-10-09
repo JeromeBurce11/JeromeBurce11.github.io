@@ -9,7 +9,7 @@ app.get('/', function(req, res){
  });
 
 // app.use(express.static('public'));
-app.use("/static", express.static('./static/'));
+app.use("/static", express.static('./scripts/'));
 http.listen(port, function(){
   console.log('listening on *: ' + port);
 });
