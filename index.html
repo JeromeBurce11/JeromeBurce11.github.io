@@ -71,69 +71,74 @@
 
 <body>
   <center>
-  <div>
+    <div>
       <img class="up" src="https://lh3.googleusercontent.com/--XOBrnS2b9c/XGJod7MFTKI/AAAAAAAAALU/4FmHG3mXxFwzbsfMvaamrjlzg625gYxhACEwYBhgL/w140-h140-p/26754591_1754847841226645_2036073689_n.jpg">
       <h1 class="name">Jerome Burce</h1>
-      <p class="app">My MQTT Web App</p>  
-  </div><br>
-  <fieldset>
-    <center>
-      <h4>Broker</h4>
-      <label for="address">Address:</label>
-      <input type="text" id="address" value="wss://test.mosquitto.org:8081/mqtt"><br><br>
-      <button type="button" class="btn btn-success" id="btn-connect">Connect</button>
-      <button class="btn btn-success" id="btn-disconnect">Disconnect</button><br><br>
-      <label for="Status">Status:</label>
-      <input type="text" id="status">
-    </center>
-  </fieldset><br>
-  <table id="tbbroker">
-    <thead>
-      <th>Topic</th>
-      <th id = "brokerPayload">Payload</th>
-      <th>Time</th>
-    </thead>
-    <tbody></tbody>
-  </table><br>
-  <fieldset>
-    <center>
-      <h4>Publish</h4>
-      <label for="address">Topic:</label>
-      <input type="text" class="topic" name="topic"><br><br>
-      <label for="Status">Payload:</label>
-      <input type="text" class="payload" name="payload"><br><br>
-      <button class="btn btn-success" id="btn-publish">Publish</button><br>
-    </center>
-  </fieldset>
-  <table id="tbpublish">
-    <thead>
-      <th>Topic</th>
-      <th>Payload</th>
-      <th>Time</th>
-    </thead>
-    <tbody></tbody>
-  </table><br>
-  <fieldset>
-    <center>
-      <h4>Subscribe</h4>
-      <label for="address">Topic:</label>
-      <input type="text" name="topicSub" class="topicSub"><br><br>
-      <button class="btn btn-success" id="btn-subscribe">Subscribe</button>
-      <button class="btn btn-success" id="btn-unsubscribe">Unsubscribe</button><br>
-      
-    </center>
-  </fieldset>
-  <table id="tbsubscribe">
-    <thead>
-      <th>Topic</th>
-      <th>Time</th>
-    </thead>
-    
-  </table><br>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
-  <script src="scripts/browserMqtt.js"></script>
-  <script src="scripts/controller.js"></script>
-</center>
+      <p class="app">My MQTT Web App</p>
+    </div><br>
+    <h1>IOT switch</h1>
+    <input type="text" id="Sstatus" placeholder="love"><br>
+    <button id="Onbutton">ON</button>
+    <br>
+    <button id="Offbutton">OFF</button>
+    <fieldset>
+      <center>
+        <h4>Broker</h4>
+        <label for="address">Address:</label>
+        <input type="text" id="address" value="wss://test.mosquitto.org:8081/mqtt"><br><br>
+        <button type="button" class="btn btn-success" id="btn-connect">Connect</button>
+        <button class="btn btn-success" id="btn-disconnect">Disconnect</button><br><br>
+        <label for="Status">Status:</label>
+        <input type="text" id="status">
+      </center>
+    </fieldset><br>
+    <table id="tbbroker">
+      <thead>
+        <th>Topic</th>
+        <th id="brokerPayload">Payload</th>
+        <th>Time</th>
+      </thead>
+      <tbody></tbody>
+    </table><br>
+    <fieldset>
+      <center>
+        <h4>Publish</h4>
+        <label for="address">Topic:</label>
+        <input type="text" class="topic" name="topic"><br><br>
+        <label for="Status">Payload:</label>
+        <input type="text" class="payload" name="payload"><br><br>
+        <button class="btn btn-success" id="btn-publish">Publish</button><br>
+      </center>
+    </fieldset>
+    <table id="tbpublish">
+      <thead>
+        <th>Topic</th>
+        <th>Payload</th>
+        <th>Time</th>
+      </thead>
+      <tbody></tbody>
+    </table><br>
+    <fieldset>
+      <center>
+        <h4>Subscribe</h4>
+        <label for="address">Topic:</label>
+        <input type="text" name="topicSub" class="topicSub"><br><br>
+        <button class="btn btn-success" id="btn-subscribe">Subscribe</button>
+        <button class="btn btn-success" id="btn-unsubscribe">Unsubscribe</button><br>
+
+      </center>
+    </fieldset>
+    <table id="tbsubscribe">
+      <thead>
+        <th>Topic</th>
+        <th>Time</th>
+      </thead>
+
+    </table><br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="scripts/browserMqtt.js"></script>
+    <script src="scripts/controller.js"></script>
+  </center>
 </body>
 
 </html>
