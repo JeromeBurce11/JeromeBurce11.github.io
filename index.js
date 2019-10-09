@@ -8,8 +8,8 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
  });
 
-app.use(express.static('public'));
-
+// app.use(express.static('public'));
+app.use("/static", express.static('./static/'));
 http.listen(port, function(){
   console.log('listening on *: ' + port);
 });
